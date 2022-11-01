@@ -23,12 +23,14 @@ function button(opcao){
     }
     else if(opcao == "apagarUm"){
         codigo.pop();
-        document.getElementById("codigo").innerHTML = codigo;
+        let aux = String(codigo).replace(/\,/g, " ");
+        document.getElementById("codigo").innerHTML = aux;
     }
     else{
         if(codigo.length < 4){
             codigo.push(opcao);
-            document.getElementById("codigo").innerHTML = codigo;
+            let aux = String(codigo).replace(/\,/g, " ");
+            document.getElementById("codigo").innerHTML = aux;
         }
         else{
             alert("Maximo de 4 caracteres");
