@@ -50,3 +50,13 @@ body{
     "button0 button0 button0"
     "apagarUm apagar enter";
 }
+
+.teclaNumero{
+    border: 1px solid black;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 25px;
+}
